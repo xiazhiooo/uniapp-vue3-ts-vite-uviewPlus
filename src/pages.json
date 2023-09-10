@@ -1,0 +1,129 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false,
+				"disableScroll": true, // 禁止滚动, 解决scroll-view在Android小程序卡顿的问题
+				// "onReachBottomDistance": 50,
+				// 禁用原生导航栏
+				// "titleNView":false
+				"app-plus": {
+					"scrollIndicator": "none", //隐藏滚动条
+					"bounce": "none", //关闭反弹效果
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/study/index",
+			"style": {
+				"navigationBarTitleText": "学习",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"scrollIndicator": "none", //隐藏滚动条
+					"bounce": "none", //关闭反弹效果
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/square/index",
+			"style": {
+				"navigationBarTitleText": "广场",
+				"enablePullDownRefresh": false,
+				"onReachBottomDistance": 300,
+				"app-plus": {
+					"scrollIndicator": "none", //隐藏滚动条
+					"bounce": "none", //关闭反弹效果
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"scrollIndicator": "none", //隐藏滚动条
+					"bounce": "none", //关闭反弹效果
+					"titleNView": false
+				}
+			}
+		}
+    ],
+	"easycom": {
+		"autoscan": true,
+		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+		"custom": {
+			// uview plus 规则如下配置
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^u-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@/uni_modules/uni-ui/components/uni-$1/components/uni-$1/uni-$1.vue",
+			// uv-ui 规则如下配置
+			"^uv-(.*)": "@/uni_modules/uv-ui/components/uv-$1/components/uv-$1/uv-$1.vue"
+		}
+	},
+	// 头部导航条
+	"globalStyle": {
+		// 头部导航条字体颜色，仅支持黑色和白色
+		"navigationBarTextStyle": "black",
+		// 导航条标题
+		"navigationBarTitleText": "vue3+ts+vite模板",
+		// 导航条背景颜色
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	// 底部tabBar
+	"tabBar": {
+		// 未选中字体颜色
+		"color": "#999999",
+		"backgroundColor": "#fff",
+		// 选中字体颜色
+		"selectedColor": "#5BC89C",
+		// taBar高度
+		"height": "64px",
+		// 图标默认高度(等比例缩放)
+		"iconWidth": "24px",
+		// 图标和字体的间距
+		"spacing": "0px",
+		// 字体大小
+		"fontSize": "12px",
+		// tabBar上边框颜色
+		"borderStyle": "white",
+		"list": [{
+				// 页面路径
+				"pagePath": "pages/home/index",
+				// 文字
+				"text": "首页",
+				// 未选中图片样式
+				"iconPath": "static/demo.jpg",
+				// 选中图片样式
+				"selectedIconPath": "static/demo.jpg"
+			},
+			{
+				"pagePath": "pages/study/index",
+				"text": "学习",
+				"iconPath": "static/demo.jpg",
+				"selectedIconPath": "static/demo.jpg"
+			},
+			{
+				"pagePath": "pages/square/index",
+				"text": "广场",
+				"iconPath": "static/demo.jpg",
+				"selectedIconPath": "static/demo.jpg"
+			},
+			{
+				"pagePath": "pages/my/index",
+				"text": "我的",
+				"iconPath": "static/demo.jpg",
+				"selectedIconPath": "static/demo.jpg"
+			}
+		]
+	}
+}

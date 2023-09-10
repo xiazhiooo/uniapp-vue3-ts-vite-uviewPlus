@@ -1,0 +1,20 @@
+{
+    "id": "lj-waterfall",
+    "name": "瀑布流 超级好用 开箱即用 兼容vue2vue3小程序、H5等多端",
+    "displayName": "瀑布流 超级好用 开箱即用 兼容vue2vue3小程序、H5等多端",
+    "version": "1.0.0",
+    "description": "瀑布流，简单属性配置即可实现瀑布流，可以自行设置列数，灵活配置图片内容，兼容多端及vue2和vue3",
+    "keywords": [
+        "瀑布流",
+        "vue",
+        "懒加载",
+        "列表",
+        "瀑布"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}

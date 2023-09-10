@@ -1,0 +1,137 @@
+/* flex */
+.flx-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flx-justify-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flx-justify-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.flx-align-center {
+  display: flex;
+  align-items: center;
+}
+.flx-align-start {
+  display: flex;
+  align-items: flex-start;
+}
+.flx-justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.flx-between {
+  display: flex;
+  justify-content: space-between;
+}
+.flx-direction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.bg-fff{
+  background-color: #fff;
+}
+
+.card {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 12rpx;
+  box-shadow: 0 0 24rpx rgb(0 0 0 / 5%);
+}
+
+/* clearfix */
+.clearfix::after {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  content: "";
+}
+
+/* 文字单行省略号 */
+.sle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 文字多行省略号 */
+.mle {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* 文字多了自动換行 */
+.break-word {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.wh100{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 外边距、内边距全局样式 */
+@for $i from 0 through 200 {
+  .mg#{$i} {
+    margin: #{$i}rpx !important;
+  }
+  .mt#{$i} {
+    margin-top: #{$i}rpx !important;
+  }
+  .mr#{$i} {
+    margin-right: #{$i}rpx !important;
+  }
+  .mb#{$i} {
+    margin-bottom: #{$i}rpx !important;
+  }
+  .ml#{$i} {
+    margin-left: #{$i}rpx !important;
+  }
+  .pd#{$i} {
+    padding: #{$i}rpx !important;
+  }
+  .pt#{$i} {
+    padding-top: #{$i}rpx !important;
+  }
+  .pr#{$i} {
+    padding-right: #{$i}rpx !important;
+  }
+  .pb#{$i} {
+    padding-bottom: #{$i}rpx !important;
+  }
+  .pl#{$i} {
+    padding-left: #{$i}rpx !important;
+  }
+}
+
+@for $i from 0 through 100 {
+  .fz#{$i} {
+    font-size: #{$i}rpx !important;
+  }
+}
+
+@for $i from 0 through 500 {
+  .ht#{$i} {
+    height: #{$i}rpx !important;
+  }
+}
+
+@for $i from 0 through 500 {
+  .wt#{$i} {
+    width: #{$i}rpx !important;
+  }
+}
